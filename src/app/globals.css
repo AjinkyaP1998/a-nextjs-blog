@@ -31,3 +31,85 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Header Top */
+.header-top {
+  position: fixed;    /* Keeps the header at the top of the viewport */
+  top: 0;             /* Aligns the header at the top of the page */
+  left: 0;            /* Aligns the header to the left side of the page */
+  width: 100%;        /* Ensures the header spans the full width */
+  padding: 1rem;      /* Provides padding around the content */
+  background-color: white; /* Sets the background color to white */
+  z-index: 50;        /* Ensures the header stays above other content */
+}
+
+
+/* Intro Page */
+.intro-page {
+  position: relative;
+  width: 100%;     
+  padding: 1rem;    
+  margin-left: 0.5rem;   
+  margin-right: 0.5rem;
+  margin-top: 4rem;     
+  margin-bottom: 4rem;  
+  height: 800px;   
+}
+@media (max-width: 768px) {
+  .intro-page {
+      padding: 0.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+  }
+}
+
+
+/* Post Tiles Container (Three Posts) */
+.post-tiles-container {
+  margin-top: 100px; 
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+}
+.post-tiles-container > * {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+
+/* Post Tile Wrapper (Single Post Tile) */
+.post-tile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #333333; 
+  border-radius: 8px; 
+  transition: box-shadow 0.3s ease; 
+  padding: 40px 20px; 
+  height: 600px; 
+}
+.post-tile-wrapper:hover {
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.8); 
+  cursor: pointer;
+}
+
+
+.post-content {
+  position: relative;
+  width: 100%;     
+  padding: 1rem;    
+  margin-left: 0.5rem;   
+  margin-right: 0.5rem;
+  margin-top: 8rem;     
+  margin-bottom: 4rem;  
+  height: 800px; 
+}
+
+.actual-content {
+  font-family: 'Arial', sans-serif; /* Set the font family */
+  font-size: 20px; /* Set the base font size */
+  font-weight: normal; /* Set the font weight */
+  line-height: 1.5; /* Set the line height */
+  letter-spacing: normal; /* Set the spacing between characters */
+}
