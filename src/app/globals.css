@@ -77,15 +77,50 @@ body {
 
 /* Post Tiles Container (Three Posts) */
 .post-tiles-container {
-  margin-top: 100px; 
+  margin-top: 100px;
   display: flex;
-  flex-wrap: nowrap; 
-  overflow-x: auto; 
-  -webkit-overflow-scrolling: touch; 
+  flex-wrap: wrap; /* Changed from nowrap to wrap to allow wrapping */
+  overflow-x: auto; /* Keeps horizontal scrolling for overflow */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
 }
+
 .post-tiles-container > * {
   margin-right: 30px;
   margin-left: 30px;
+  flex: 1 0 21%; /* Ensures that each tile takes up at least 21% of the container width, adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .post-tiles-container {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .post-tiles-container > * {
+    margin-right: 0; /* Removes right margin in vertical layout */
+    margin-left: 0; /* Removes left margin in vertical layout */
+    margin-top: 15px; /* Adds top margin for spacing between stacked tiles */
+    margin-bottom: 15px; /* Adds bottom margin for spacing between stacked tiles */
+    flex: 0 0 auto; /* Resets flex to not grow, shrink, and based on content height */
+  }
+
+  /* To avoid double spacing at the top of the first tile and bottom of the last tile */
+  .post-tiles-container > *:first-child {
+    margin-top: 0;
+  }
+
+  .post-tiles-container > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.display-post-image {
+  width: 100%;  /* Full width of the container */
+  aspect-ratio: 1 / 1;  /* Keeps the width and height the same */
+  border: 2px solid black; /* Keeps your border styling */
+  object-fit: cover;  /* Ensures the image covers the area without distorting */
 }
 
 
@@ -93,12 +128,11 @@ body {
 .post-tile-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #333333; 
   border-radius: 8px; 
   transition: box-shadow 0.3s ease; 
   padding: 40px 20px; 
-  height: 600px; 
+  height: 700px; 
 }
 .post-tile-wrapper:hover {
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.8); 

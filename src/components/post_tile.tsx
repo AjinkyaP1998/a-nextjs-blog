@@ -17,7 +17,7 @@ function PostTile({ imageUrl, title, author, publishDate, description, link }: P
     <Link href={link} className="post-tile-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} passHref>
       <div className="post-tile" style={{ display: 'flex', flexDirection: 'column', alignItems: 'space-between' }}>
 
-        <img src={imageUrl} alt="Post Image" className="post-image" style={{ height: '400px', width: '450px', border: '2px solid black' }}/>
+        <img src={imageUrl} alt="Post Image" className="display-post-image"/>
         
         <div className="post-details">
 
