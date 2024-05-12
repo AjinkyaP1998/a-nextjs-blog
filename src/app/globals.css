@@ -43,6 +43,17 @@ body {
   z-index: 50;        /* Ensures the header stays above other content */
 }
 
+/* Header Top */
+.tail {
+  margin-top: 100px;
+  position: absolute;
+  left: 0;  
+  right: 0;          /* Aligns the header to the left side of the page */
+  height: 100px;    
+  padding: 1rem;      /* Provides padding around the content */
+  background-color: white; /* Sets the background color to white */
+}
+
 
 /* Intro Page */
 .intro-page {

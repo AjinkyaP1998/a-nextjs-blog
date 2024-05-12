@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderTop from '../components/header_top';
 import ThreePostRow from '../components/three_posts_row';
 import IntroPage from '../components/intro_page'; 
+import Tail from '../components/tail';
 
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
       <IntroPage />
 
       <ThreePostRow />
+
+      <Tail />
 
     </main>
   );
