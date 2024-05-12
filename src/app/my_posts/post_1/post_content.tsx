@@ -22,7 +22,7 @@ function PostContent() {
                     </div>
                     <div className="md:flex-1 md:order-1 md:mr-6">
                         <p className="mb-4">
-                            This experience made Herzl realize his life's mission: to find a country for Jews, a place they could call home,
+                            This experience made Herzl realize his life&apos;s mission: to find a country for Jews, a place they could call home,
                             a place where they could live without discrimination. Herzl decided on Palestine,
                             the ancient homeland of Jews, and founded a new movement for Jewish statehood, often called Zionism.
                             Herzl is known as the founder of political Zionism, but he died before Israel was created.
