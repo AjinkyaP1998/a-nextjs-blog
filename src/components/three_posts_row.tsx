@@ -4,7 +4,7 @@ import PostTile from './post_tile';
 
 function ThreePostRow() {
     return (
-        <div className="post-tiles-container">
+        <div className="post-tiles-container p-24">
         <PostTile
           imageUrl="../display_post_images/post1_image0.jpeg"
           title="The Israel-Palestine Conflict: A Historical Perspective"
