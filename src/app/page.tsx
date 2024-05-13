@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex-col w-full"> 
 
-      <div className="p-24">
+      <div className="mt-36 mx-24">
         <HeaderTop />
 
         <IntroPage />

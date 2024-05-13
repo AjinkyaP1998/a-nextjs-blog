@@ -6,7 +6,9 @@ import MapImage from './assets/map.png';
 function PostContent() {
     return (
         <div className="post-content">
-            <h1 className="relative text-3xl font-bold mb-4">The Israel-Palestine Conflict: A Historical Perspective</h1>
+            <h1 className="relative text-4xl font-bold mb-4" style={{color: 'black', fontFamily: 'Poppins'}}>
+                The Israel-Palestine Conflict: A Historical Perspective
+            </h1>
             <div className = "actual-content">
                 
                 <p className="mb-4">
@@ -17,7 +19,12 @@ function PostContent() {
                 </p>
                 <div className="flex flex-col md:flex-row items-center md:items-start">
                     <div className="md:flex-1 md:order-2">
-                        <img src={HerzlImage.src} alt="Theodore Herzl" className="max-w-xs mx-auto md:max-w-sm" />
+                        <img 
+                            src={HerzlImage.src} 
+                            alt="Theodore Herzl" 
+                            className="max-w-xs mx-auto md:max-w-sm" 
+                            style={{ border: '3px solid brown' }}
+                        />
                         <h2 className="text-2xl font-semibold mt-2 md:mt-4 text-center">Theodore Herzl</h2>
                     </div>
                     <div className="md:flex-1 md:order-1 md:mr-6">
@@ -64,7 +71,12 @@ function PostContent() {
                 </p>
                 <div className="flex flex-col md:flex-row items-center justify-center md:items-center md:justify-start" style={{ height: '100%' }}>
                     <div className="md:flex-1 md:order-1"  style={{ flex: '0 0 60%' }} >
-                        <img src={MapImage.src} alt="MapImage" className="mx-auto" style={{ width: '90%' }}/>
+                        <img 
+                            src={MapImage.src} 
+                            alt="MapImage" 
+                            className="mx-auto" 
+                            style={{ width: '90%', border: '3px solid brown' }}
+                        />
                     </div>
                     <div className="md:flex-1 md:order-2 md:mr-6"   style={{ flex: '0 0 40%' }} >
                         <p className="mb-4">

@@ -4,12 +4,14 @@
 
 :root {
   --foreground-rgb: 211, 211, 211;      /* Bright grey using RGB values */
-  --background-rgb: 255, 235, 210;       /* Peach color (#FFEBD2) using RGB values */
+  /* --background-rgb: 255, 235, 210;       */
+  --background-rgb: 250, 227, 207;
 }
 
 body {
   color: rgb(var(--foreground-rgb));     /* Sets the text color of the body using the updated grey color */
   background: rgb(var(--background-rgb)); /* Sets the background color of the body to peach */
+  font-family: 'Poppins', Arial, sans-serif; /* Sets the global font family to Poppins */
 }
 
 @layer utilities {
@@ -25,7 +27,7 @@ body {
   left: 0;            /* Aligns the header to the left side of the page */
   width: 100%;        /* Ensures the header spans the full width */
   padding: 1rem;      /* Provides padding around the content */
-  background-color: #FFEBD2; /* Sets the background color to white */
+  background-color:  rgb(223, 198, 141); /* Sets the background color to white */
   z-index: 50;        /* Ensures the header stays above other content */
 }
 
@@ -63,7 +65,7 @@ body {
 }
 
 .post-row-custom-bg {
-  background-color: #edccb4 !important; /* Use !important to ensure this style has higher specificity */
+  background-color: #edccb4; /* Use !important to ensure this style has higher specificity */
   width: 100%; /* This ensures it takes the full screen width */
 }
 
@@ -136,14 +138,14 @@ body {
 .post-tile-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #333333; 
+  background-color: #ab6d5e; 
   border-radius: 8px; 
   transition: box-shadow 0.3s ease; 
   padding: 40px 20px; 
   height: 700px; 
 }
 .post-tile-wrapper:hover {
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.8); 
+  box-shadow: 10px 10px 20px rgba(87, 22, 11, 0.9); 
   cursor: pointer;
 }
 
@@ -154,15 +156,15 @@ body {
   padding: 1rem;    
   margin-left: 0.5rem;   
   margin-right: 0.5rem;
-  margin-top: 8rem;     
+  margin-top: 4rem;     
   margin-bottom: 4rem;  
   height: 800px; 
 }
 
 .actual-content {
-  font-family: 'Arial', sans-serif; /* Set the font family */
   font-size: 20px; /* Set the base font size */
   font-weight: normal; /* Set the font weight */
   line-height: 1.5; /* Set the line height */
   letter-spacing: normal; /* Set the spacing between characters */
+  color: black; /* Set the text color to black */
 }
