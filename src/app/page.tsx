@@ -7,22 +7,21 @@ import Tail from '../components/tail';
 
 export default function Home() {
   return (
-    <main className="flex-col w-full"> 
-
+    <main className="relative flex flex-col w-full min-h-screen">
+      
+      <HeaderTop />
+      
       <div className="mt-36 mx-24">
-        <HeaderTop />
-
         <IntroPage />
       </div>
-
+      
       <div className="w-full post-row-custom-bg"> 
         <ThreePostRow />
       </div>
-
-      <div className="p-24">
+      
+      <div className="w-full">
         <Tail />
       </div>
-
     </main>
   );
 }

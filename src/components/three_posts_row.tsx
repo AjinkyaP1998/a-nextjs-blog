@@ -6,7 +6,7 @@ function ThreePostRow() {
     return (
         <div className="post-tiles-container p-24">
         <PostTile
-          imageUrl="../display_post_images/post1_image0.jpeg"
+          imageUrl="../display_post_images/post1_image0.png"
           title="The Israel-Palestine Conflict: A Historical Perspective"
           author="Dhanashree Patil"
           publishDate="May 5, 2024"
@@ -14,7 +14,7 @@ function ThreePostRow() {
           link="/my_posts/post_1" 
         />
         <PostTile
-          imageUrl="../display_post_images/post2_image0.jpg"
+          imageUrl=""
           title="Coming soon..."
           author=""
           publishDate="May 6, 2024"
@@ -22,7 +22,7 @@ function ThreePostRow() {
           link="/my_posts/post_1" 
         />
         <PostTile
-          imageUrl="../display_post_images/post3_image0.jpg"
+          imageUrl=""
           title="Coming soon..."
           author=""
           publishDate="May 7, 2024"

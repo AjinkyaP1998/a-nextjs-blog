@@ -4,14 +4,13 @@
 
 :root {
   --foreground-rgb: 211, 211, 211;      /* Bright grey using RGB values */
-  /* --background-rgb: 255, 235, 210;       */
-  --background-rgb: 250, 227, 207;
+  --background-rgb: 244, 238, 255; /* RGB values for #edccb4 */
 }
 
 body {
   color: rgb(var(--foreground-rgb));     /* Sets the text color of the body using the updated grey color */
   background: rgb(var(--background-rgb)); /* Sets the background color of the body to peach */
-  font-family: 'Poppins', Arial, sans-serif; /* Sets the global font family to Poppins */
+  font-family: 'Poppins'; 
 }
 
 @layer utilities {
@@ -26,19 +25,19 @@ body {
   top: 0;             /* Aligns the header at the top of the page */
   left: 0;            /* Aligns the header to the left side of the page */
   width: 100%;        /* Ensures the header spans the full width */
-  padding: 1rem;      /* Provides padding around the content */
-  background-color:  rgb(223, 198, 141); /* Sets the background color to white */
+  height: 8rem;       /* Sets the height of the header */
+  padding: 0rem;      /* Provides padding around the content */
+  background-color:  rgb(66, 72, 116); /* Sets the background color to white */
   z-index: 50;        /* Ensures the header stays above other content */
 }
 
-/* Header Top */
+/* Bottom */
 .tail {
-  margin-top: 100px;
-  position: absolute;
-  left: 0;  
-  right: 0;          /* Aligns the header to the left side of the page */
-  height: 100px;    
-  padding: 1rem;      /* Provides padding around the content */
+  /* position: relative; */
+  /* margin-top:15rem; */
+  bottom: 0;
+  width: 100%; 
+  height: 150px;
   background-color: white; /* Sets the background color to white */
 }
 
@@ -51,9 +50,9 @@ body {
   margin-left: 0.5rem;   
   margin-right: 0.5rem;
   margin-top: 4rem;     
-  margin-bottom: 4rem;  
+  margin-bottom: 1rem;  
   height: 800px;
-  background-color: black;   
+  background-color: #DCD6F7;   
   border-radius: 10px; /* Adjust the pixel value to your preference */
 }
 @media (max-width: 768px) {
@@ -64,16 +63,37 @@ body {
   }
 }
 
+
+.intro-page-text {
+  font-size: 2.25rem; /* text-4xl */
+  @media (min-width: 768px) {
+      font-size: 2.25rem; /* md:text-4xl */
+  }
+  font-weight: bold; /* font-bold */
+  margin-bottom: 1rem; /* mb-4 */
+  margin-left: 3rem; /* mx-12 */
+  margin-right: 3rem; /* mx-12 */
+  @media (min-width: 768px) {
+      margin-left: 2rem; /* md:mx-8 */
+      margin-right: 2rem; /* md:mx-8 */
+  }
+  text-align: center; /* text-center */
+  color: #353a5d; /* text-[#353a5d] */
+  font-family: 'Montserrat', sans-serif; /* Montserrat */
+}
+
+
+
 .post-row-custom-bg {
-  background-color: #edccb4; /* Use !important to ensure this style has higher specificity */
+  background-color: #F4EEFF; /* Use !important to ensure this style has higher specificity */
   width: 100%; /* This ensures it takes the full screen width */
 }
 
 
 .intro-image-container {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 .intro-image-fade {
   position: absolute;
@@ -81,7 +101,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 10px; /* Adjust the pixel value to your preference */
+  border-radius: 12px; /* Adjust the pixel value to your preference */
   opacity: 0.8; 
   transition: opacity 5s ease-in-out;
 }
@@ -89,15 +109,15 @@ body {
 
 /* Post Tiles Container (Three Posts) */
 .post-tiles-container {
-  margin-top: 100px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap; /* Changed from nowrap to wrap to allow wrapping */
   overflow-x: auto; /* Keeps horizontal scrolling for overflow */
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
 }
 .post-tiles-container > * {
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
   flex: 1 0 21%; /* Ensures that each tile takes up at least 21% of the container width, adjust as needed */
 }
 @media (max-width: 768px) {
@@ -129,8 +149,9 @@ body {
 .display-post-image {
   width: 100%;  /* Full width of the container */
   aspect-ratio: 1 / 1;  /* Keeps the width and height the same */
-  border: 2px solid black; /* Keeps your border styling */
   object-fit: cover;  /* Ensures the image covers the area without distorting */
+  border-radius: 8px; 
+
 }
 
 
@@ -138,27 +159,26 @@ body {
 .post-tile-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #ab6d5e; 
+  background-color: #ffffff; 
   border-radius: 8px; 
   transition: box-shadow 0.3s ease; 
-  padding: 40px 20px; 
-  height: 700px; 
+  height: 600px; 
+  box-shadow: 5px 5px 15px rgba(66, 72, 116, 0.5); /* Default shadow */
 }
 .post-tile-wrapper:hover {
-  box-shadow: 10px 10px 20px rgba(87, 22, 11, 0.9); 
+  box-shadow: 10px 10px 20px rgba(66, 72, 116, 0.9); 
   cursor: pointer;
 }
 
-
 .post-content {
-  position: relative;
+  /* position: relative; */
   width: 100%;     
   padding: 1rem;    
   margin-left: 0.5rem;   
   margin-right: 0.5rem;
   margin-top: 4rem;     
   margin-bottom: 4rem;  
-  height: 800px; 
+  /* height: 800px;  */
 }
 
 .actual-content {
@@ -166,5 +186,5 @@ body {
   font-weight: normal; /* Set the font weight */
   line-height: 1.5; /* Set the line height */
   letter-spacing: normal; /* Set the spacing between characters */
-  color: black; /* Set the text color to black */
+  color: #353a5d; /* Set the text color to black */
 }

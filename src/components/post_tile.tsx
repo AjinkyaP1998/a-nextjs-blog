@@ -17,18 +17,18 @@ function PostTile({ imageUrl, title, author, publishDate, description, link }: P
     <Link href={link} className="post-tile-wrapper" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }} passHref>
       <div className="post-tile" style={{ display: 'flex', flexDirection: 'column', alignItems: 'space-between' }}>
 
-        {/* <img src={imageUrl} alt="Post Image" className="display-post-image"/> */}
+        <img src={imageUrl} alt="Post Image" className="display-post-image"/>
         
         <div className="post-details">
 
-          <div className="post-title px-1 py-1 text-[22px] font-medium text-gray-200">{title}</div>
+          <div className="post-title px-5 py-5 text-[22px] font-medium" style={{ color: '#353a5d' }}>{title}</div>
 
           <div className="post-metadata">
-            <span className="post-author px-1 py-1 text-[18px] font-medium text-gray-200">{author}</span>
-            <span className="post-publish-date px-1 py-1 text-[18px] font-medium text-gray-200">{publishDate}</span>
+            {/* <span className="post-author px-5 py-5 text-[18px] font-medium"  style={{ color: '#353a5d' }}>{author}</span> */}
+            <span className="post-publish-date px-5 py-5 text-[18px] font-medium" style={{ color: '#353a5d' }}>{publishDate}</span>
           </div>
           
-          <p className="post-description px-1 py-1 text-[16px] font-medium text-gray-200">{description}</p>
+          {/* <p className="post-description px-5 py-5 text-[16px] font-medium" style={{ color: '#353a5d' }}>{description}</p> */}
       
         </div>  
       </div>

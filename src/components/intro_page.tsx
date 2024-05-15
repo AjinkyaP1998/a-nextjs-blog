@@ -17,26 +17,36 @@ function IntroPage() {
 
     return (
         <div className="intro-page">
-            <div className="relative w-full h-full mx-auto">
-                <div className="intro-image-container">
-                    <Image
-                        src="/intro_image_dark.webp"
-                        alt="Dark Image"
-                        layout='fill'
-                        objectFit='cover'
-                        priority
-                        className="intro-image-fade"
-                        style={{ opacity: opacity }}
-                    />
-                    <Image
-                        src="/intro_image.webp"
-                        alt="Bright Image"
-                        layout='fill'
-                        objectFit='cover'
-                        priority
-                        className="intro-image-fade"
-                        style={{ opacity: 1 - opacity }}
-                    />
+            <div className="relative w-full h-full mx-auto flex">
+                <div className="w-1/2 flex items-center justify-center h-full">
+                    <div>
+                        <h1 className="intro-page-text">
+                            Journey through the History of Global Politics. Uncover key events, alliances, and conflicts that have shaped our world. 
+                            See how past decisions echo in today's international landscape...
+                        </h1>
+                    </div>
+                </div>
+                <div className="w-1/2 flex justify-center items-center">
+                    <div className="intro-image-container">
+                        <Image
+                            src="/intro_image.webp"
+                            alt="Dark Image"
+                            layout="fill"
+                            objectFit="cover"
+                            priority
+                            className="intro-image-fade"
+                            style={{ opacity: opacity }}
+                        />
+                        <Image
+                            src="/intro_image.webp"
+                            alt="Bright Image"
+                            layout="fill"
+                            objectFit="cover"
+                            priority
+                            className="intro-image-fade"
+                            style={{ opacity: 1 - opacity }}
+                        />
+                    </div>
                 </div>
             </div>
 

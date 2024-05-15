@@ -23,9 +23,9 @@ function PostContent() {
                             src={HerzlImage.src} 
                             alt="Theodore Herzl" 
                             className="max-w-xs mx-auto md:max-w-sm" 
-                            style={{ border: '3px solid brown' }}
+                            style={{ border: '3px solid #424874' }}
                         />
-                        <h2 className="text-2xl font-semibold mt-2 md:mt-4 text-center">Theodore Herzl</h2>
+                        <h2 className="text-xl font-semibold text-center" style={{ marginTop: '0.25rem' }}>Theodore Herzl</h2>
                     </div>
                     <div className="md:flex-1 md:order-1 md:mr-6">
                         <p className="mb-4">
@@ -75,7 +75,7 @@ function PostContent() {
                             src={MapImage.src} 
                             alt="MapImage" 
                             className="mx-auto" 
-                            style={{ width: '90%', border: '3px solid brown' }}
+                            style={{ width: '90%', border: '3px solid #424874' }}
                         />
                     </div>
                     <div className="md:flex-1 md:order-2 md:mr-6"   style={{ flex: '0 0 40%' }} >
