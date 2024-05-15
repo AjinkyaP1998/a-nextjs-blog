@@ -22,7 +22,7 @@ function IntroPage() {
                     <div>
                         <h1 className="intro-page-text">
                             Journey through the History of Global Politics. Uncover key events, alliances, and conflicts that have shaped our world. 
-                            See how past decisions echo in today's international landscape...
+                            See how past decisions echo in today&apos;s international landscape...
                         </h1>
                     </div>
                 </div>
