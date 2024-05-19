@@ -25,7 +25,7 @@ body {
   top: 0;             /* Aligns the header at the top of the page */
   left: 0;            /* Aligns the header to the left side of the page */
   width: 100%;        /* Ensures the header spans the full width */
-  height: 3.5rem;       /* Sets the height of the header */
+  height: 5rem;       /* Sets the height of the header */
   padding: 0rem;      /* Provides padding around the content */
   background-color: rgb(66, 72, 116); /* Sets the background color */
   z-index: 50;        /* Ensures the header stays above other content */
@@ -52,7 +52,7 @@ body {
 
 /* Header Title */
 .header-title {
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'Montserrat, serif';
   font-weight: 500;
   color: white;
@@ -105,6 +105,7 @@ body {
 
 /* Intro Page */
 .intro-page {
+  position: relative;
   padding: 1rem;    
   margin-left: 6rem;   
   margin-right: 6rem;
@@ -146,7 +147,6 @@ body {
   margin-bottom: 1rem; /* mb-4 */
   margin-left: 3rem; /* mx-12 */
   margin-right: 3rem; /* mx-12 */
-  text-align: center; /* text-center */
   color: #353a5d; /* text-[#353a5d] */
   font-family: 'Montserrat'; /* Montserrat */
 }
@@ -177,18 +177,8 @@ body {
 
 .intro-image-container {
   position: relative;
-  width: 80%;
-  height: 80%;
-}
-.intro-image-fade {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 12px; /* Adjust the pixel value to your preference */
-  opacity: 0.8; 
-  transition: opacity 5s ease-in-out;
+  width: 90%;
+  padding-top: 90%; /* This is for a 16:9 aspect ratio. Adjust as needed */
 }
 
 
