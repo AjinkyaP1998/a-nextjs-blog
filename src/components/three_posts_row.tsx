@@ -14,20 +14,20 @@ function ThreePostRow() {
           link="/my_posts/post_1" 
         />
         <PostTile
-          imageUrl=""
-          title="Coming soon..."
+          imageUrl="../display_post_images/post2_image0.png"
+          title="What is Hamas?"
           author=""
-          publishDate="May 6, 2024"
+          publishDate="Coming Soon!"
           description=""
-          link="/my_posts/post_1" 
+          link="" 
         />
         <PostTile
-          imageUrl=""
-          title="Coming soon..."
+          imageUrl="../display_post_images/post3_image0.webp"
+          title="Ever Wonder Why the U.S. Supports Israel So Much?"
           author=""
-          publishDate="May 7, 2024"
+          publishDate="Coming Soon!"
           description=""
-          link="/my_posts/post_1" 
+          link="" 
         />
       </div>
     );

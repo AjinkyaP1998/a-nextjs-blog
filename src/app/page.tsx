@@ -11,7 +11,7 @@ export default function Home() {
       
       <HeaderTop />
       
-      <div className="mt-36 mx-24">
+      <div className="mt-14 mx-24">
         <IntroPage />
       </div>
       
