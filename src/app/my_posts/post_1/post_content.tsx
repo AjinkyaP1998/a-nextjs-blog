@@ -21,7 +21,7 @@ function PostContent() {
                 </p>
 
                 <p className="mb-4">
-                This experience made Herzl realize his life's mission: to find a country for Jews, a place they could call home, a place where they could live without discrimination. Herzl decided on Palestine, the ancient homeland of Jews, and founded a new movement for Jewish statehood, often called Zionism. Herzl is known as the founder of political Zionism, but he died before Israel was created.
+                This experience made Herzl realize his life&apos;s mission: to find a country for Jews, a place they could call home, a place where they could live without discrimination. Herzl decided on Palestine, the ancient homeland of Jews, and founded a new movement for Jewish statehood, often called Zionism. Herzl is known as the founder of political Zionism, but he died before Israel was created.
                 </p>
 
                 <div className="flex">
@@ -55,7 +55,7 @@ function PostContent() {
                 <div className="flex">
                     <div className="md:flex-1 md:order-2">
                         <p className="mb-4">
-                            As the Jewish population in Palestine increased, tensions with the Arab population escalated. British did what they do best they said let's partition a Jewish State for the Jews and an Arab State for the Palestinians. However, the Arab side rejected this. After the second world war, Britain left the issue to the United Nations, which proposed a plan where the Jewish state would get 55% of Palestine and the Arab state would get 44%, with the remaining 1% given to Jerusalem to be controlled by an international regime.
+                            As the Jewish population in Palestine increased, tensions with the Arab population escalated. British did what they do best they said let&apos;s partition a Jewish State for the Jews and an Arab State for the Palestinians. However, the Arab side rejected this. After the second world war, Britain left the issue to the United Nations, which proposed a plan where the Jewish state would get 55% of Palestine and the Arab state would get 44%, with the remaining 1% given to Jerusalem to be controlled by an international regime.
                         </p>
                         <p className="mb-4">
                             Palestinians rejected the plan, but Jews declared the state of Israel in 1948. Arab countries attacked Israel immediately, but Israel won the war and occupied 77% of Palestine. In 1967, another war broke out, and Israel captured the West Bank, Gaza, and the Sinai Peninsula.
