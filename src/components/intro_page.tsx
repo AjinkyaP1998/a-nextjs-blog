@@ -20,7 +20,9 @@ function IntroPage() {
                         <Image
                             src="/intro_image.webp"
                             alt="Introduction Image"
-                            layout="fill"
+                            layout="responsive"
+                            width={5}
+                            height={4}
                             objectFit="cover"
                             priority
                         />
