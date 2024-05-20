@@ -6,8 +6,8 @@ import Image from 'next/image';
 function IntroPage() {
     return (
         <div className="intro-page">
-            <div className="relative w-full h-full mx-auto flex">
-                <div className="relative w-1/2 h-full flex items-center justify-center">
+            <div className="flex items-center justify-center w-full">
+                <div className="w-1/2 flex items-center justify-center">
                     <div className="text-center" >
                         <h1 className="intro-page-text">
                             Journey through the History of Global Politics. Uncover key events, alliances, and conflicts that have shaped our world. 
@@ -15,7 +15,7 @@ function IntroPage() {
                         </h1>
                     </div>
                 </div>
-                <div className="relative w-1/2 h-full flex items-center justify-center">
+                <div className="w-1/2 flex items-center justify-center p-5">
                     <div className="intro-image-container">
                         <Image
                             src="/intro_image.webp"
